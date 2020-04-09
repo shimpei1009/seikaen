@@ -1,0 +1,145 @@
+body{
+  background-size: contain;
+  background-color: whitesmoke;
+}
+.header{
+  height: 100px;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0px; 
+  display: flex;
+  font-family: serif;
+  z-index: 1;
+  &__logo{
+    font-size:50px;
+    width: 300px;
+    min-width: 300px;
+    margin-left: 40px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+    a{
+      text-decoration: none;
+      color: black;
+    }
+    span{
+      font-size: 20px;
+      margin-bottom: 3px;
+    }
+  }
+  &__rightBox{
+    width: 40%;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 530px;
+    margin-left: 15%;
+    display: flex;
+    line-height: 100px;
+    &__top{
+      margin-left: 40px;
+      margin-right: 30px;
+    }
+    &__news{
+      margin-right: 30px;
+    }
+    &__menu{
+      margin-right: 30px;
+    }
+    &__address{
+      margin-right: 30px;
+    }
+    &__contact{
+      margin-right: 30px;
+    }
+    a{
+      height: 70px;
+      text-decoration: none;
+      color: black;
+      display: inline-block;
+      transition: all 0.3s ease 0s;
+      cursor: pointer;
+      position: relative;
+    }
+    a:hover{
+      color: #2196F3;
+    }
+    a::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #2196F3;
+      transition: all 0.3s ease 0s;
+    }
+    a:hover::after {
+      width: 100%;
+    }
+  }
+  &__telBox{
+    height: 100px;
+    min-width: 170px;
+    
+    &__text{
+      margin-top: 10px;
+      font-size: 15px;
+      font-weight: bold;
+      line-height: 30px;
+    }
+    &__num{
+      font-weight: bold;
+      line-height: 30px;
+      font-size: 25px;
+    }
+  }
+}
+.wrapper{
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
+  &__photo{
+    height: 90vh;
+    position: relative;
+    &__image{
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+      opacity: 0;
+      transition: opacity 2.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    }
+    &__image.is-visible {
+      opacity: 1;
+    }
+    &__image:nth-child(1) {
+      background-image: url('https://bit.ly/2lO4USI');
+    }
+    &__image:nth-child(2) {
+      background-image: url('https://bit.ly/2lO9PDg');
+    }
+    &__image:nth-child(3) {
+      background-image: url('https://bit.ly/2mEDLzs');
+    }
+    &__image:nth-child(4) {
+      background-image: url('https://bit.ly/2mo9SaH');
+    }
+  }
+  &__box{
+    height: 50vh;
+    display: flex;
+    &__left{
+    width: 50%;
+    background-color: red;
+    }
+    &__right{
+      width: 50%;
+      background-color: yellow;
+    }
+  }
+}
