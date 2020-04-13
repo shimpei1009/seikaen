@@ -2,10 +2,10 @@
   .show__postTitle
     = @post.title
     .show__postTitle__edit
-    = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
-    = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
+    -if user_signed_in?
+      = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
+      = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
   .show__postDate
     = @post.created_at.strftime('%Y/%m/%d')
   .show__postText
     = simple_format @post.content
--# = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
