@@ -160,15 +160,15 @@ body{
         margin-top: 13px;
         font-size: 15px;
       }
-    }
-    &__right{
-      &__bottom{
       &__title{
         font-size: 20px;
         font-weight: bold;
         word-wrap: break-word;
         overflow: auto;
-        }
+      }
+      a{
+        text-decoration: none;
+        color: black;
       }
     }
   }
@@ -210,3 +210,40 @@ position: fixed;
     box-shadow: 0px 3px 5px lightgray;
   }
 }
+
+.show{
+  width: 100vw;
+  height: 100%;
+  position: fixed;
+  padding:40px 200px 200px 200px;
+  background-color: #fffff4;
+  box-sizing: border-box;
+  font-family: serif;
+  &__postTitle{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    border-bottom: dotted 1px black;
+  }
+  a{
+    font-size: 15px;
+    border: solid 1px;
+    color: white;
+    padding: 5px;
+    background-color: lightseagreen;
+    text-decoration: none;
+  }
+
+  &__postDate{
+    margin: 10px;
+    font-size: 15px;
+    text-align: end;
+
+  }
+  &__postText{
+    margin: 5px;
+    font-size: 20px;
+  }
+}
+
