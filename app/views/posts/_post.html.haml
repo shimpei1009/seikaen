@@ -1,0 +1,8 @@
+- @posts.each do |post|
+  .post
+    .post__left
+      = link_to post_path(post.id) do
+        .post__left__date
+          = post.created_at.strftime('%Y/%m/%d')
+        .post__left__title
+          = post.title
