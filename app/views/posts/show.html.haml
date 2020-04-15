@@ -3,8 +3,8 @@
     = @post.title
     .show__postTitle__edit
     -if user_signed_in?
-      = link_to "編集", edit_post_path(@post.id), class: "postManage__edit"
-      = link_to "削除", post_path(@post.id), method: :delete, class: "postManage__delete"
+      = link_to "編集", edit_post_path(@post.id)
+      = link_to "削除", post_path(@post.id), method: :delete
   .show__postDate
     = @post.created_at.strftime('%Y/%m/%d')
   .show__postText
