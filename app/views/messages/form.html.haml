@@ -1,0 +1,16 @@
+= form_for(@message, url: { action: :confirm }) do |f|
+  .message
+    %h2 お問い合わせ
+    - if @message.errors.present?
+      %div
+        %strong 入力内容にエラーがあります
+        -# %ul
+        -#   - @message.errors.each do |attr, error|
+        -#     %li= error
+    .message__title 名前(必須)
+    %p= f.text_field :name, placeholder: '20文字以内',class: :message__name
+    .message__title メールアドレス(必須)
+    %p= f.text_field :email, placeholder: '30文字以内', class: :message__mail
+    .message__title 内容(必須)
+    %p= f.text_area :content, placeholder: '200文字以内', class: :message__text
+    = f.submit '確認画面へ', class: :message__btn

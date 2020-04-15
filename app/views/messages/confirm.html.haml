@@ -1,0 +1,20 @@
+= form_for @message, :url => done_path do |f|
+  .message
+    %h2 内容確認
+    .message__content
+      .message__item 名前
+      %p
+        = f.hidden_field :name
+        = @message.name 
+    .message__content
+      .message__item  メールアドレス
+      %p
+        = f.hidden_field :email
+        = @message.email
+    .message__content
+      .message__item  内容
+      %p
+        = f.hidden_field :content
+        = simple_format(@message.content)
+    = f.submit '送信する', class: :message__btn__left
+    = f.submit '戻る', name: 'back', class: :message__btn__right
