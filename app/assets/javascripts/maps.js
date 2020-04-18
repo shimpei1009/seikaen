@@ -13,10 +13,3 @@ var myMarker = new google.maps.Marker({
   position: new google.maps.LatLng(35.6853812, 139.8004000),
   map: myMap
 });
-
-
-google.maps.event.addListener(myInfoWindow, "closeclick", function() {
-  google.maps.event.addListenerOnce(myMarker, "click", function(event) {
-    myInfoWindow.open(myMap, myMarker);
-  });
-});
