@@ -1,0 +1,105 @@
+.map{
+  height: 80vh;
+  width: 100%;
+  background-color: #fffff4;
+  display: flex;
+  font-family: serif;
+  &__left{
+    width: 50%;
+    &__content{
+      width: 90%;
+      height: 90%;
+      background-color: white;
+      margin:5% auto;
+      #map{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__right{
+    width: 50%;
+    &__content{
+      width: 90%;
+      height: 90%;
+      border: 1px solid #dbdbdb;
+      background-color: white;
+      margin:5% auto;
+      &__address{
+        height: 25%;
+        border-bottom: 1px solid #dbdbdb;
+        display: flex;
+        &__left{
+          width: 25%;
+          height: 100%;
+          background-color: #efefef;
+          border-right: 1px solid #dbdbdb;
+          &__text{
+            padding: 10px;
+          }
+        }
+        &__right{
+          &__text{
+            padding: 10px;
+          }
+        }
+      }
+      &__tel{
+        height: 25%;
+        border-bottom: 1px solid #dbdbdb;
+        display: flex;
+        &__left{
+          width: 25%;
+          height: 100%;
+          border-right: 1px solid #dbdbdb;
+          background-color: #efefef;
+          &__text{
+            padding: 10px;
+          }
+        }
+        &__right{
+          &__text{
+            padding: 10px;
+          }
+        }
+      }
+      &__time{
+        height: 25%;
+        border-bottom: 1px solid #dbdbdb;
+        display: flex;
+        &__left{
+          width: 25%;
+          height: 100%;
+          border-right: 1px solid #dbdbdb;
+          background-color: #efefef;
+          &__text{
+            padding: 10px;
+          }
+        }
+        &__right{
+          &__text{
+            padding: 10px;
+          }
+        }
+      }
+      &__holiday{
+        height: 25%;
+        display: flex;
+        &__left{
+          width: 25%;
+          height: 97.5%;
+          border-right: 1px solid #dbdbdb;
+          background-color: #efefef;
+          &__text{
+            padding: 10px;
+          }
+        }
+        &__right{
+          &__text{
+            padding: 10px;
+          }
+        }
+      }
+    }
+  }
+}

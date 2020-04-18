@@ -1,0 +1,42 @@
+.map
+  .map__left
+    .map__left__content
+      #map
+  .map__right
+    .map__right__content
+      .map__right__content__address
+        .map__right__content__address__left
+          .map__right__content__address__left__text
+            住所
+        .map__right__content__address__right
+          .map__right__content__address__right__text
+            東京都江東区高橋20−20
+      .map__right__content__tel
+        .map__right__content__tel__left
+          .map__right__content__tel__left__text
+            電話番号
+        .map__right__content__tel__right
+          .map__right__content__tel__right__text
+            03-3333-3333
+      .map__right__content__time
+        .map__right__content__time__left
+          .map__right__content__time__left__text
+            営業時間
+        .map__right__content__time__right
+          .map__right__content__tel__right__text
+            %ul
+              %liランチ 11:00〜14:00
+              %li (L.O.13:30)
+              %li ディナー 18:00〜22:00
+              %li (L.O.21:30)
+      .map__right__content__holiday
+        .map__right__content__holiday__left
+          .map__right__content__holiday__left__text
+            定休日
+        .map__right__content__holiday__right
+          .map__right__content__tel__right__text
+            水曜日・木曜日
+
+  -# %script{:src => "http://maps.google.com/maps/api/js?key=#{Rails.application.credentials.g_map[:api_key]}&language=ja"}
+
+= javascript_include_tag 'maps.js'
