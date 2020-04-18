@@ -1,0 +1,57 @@
+.menu
+  .menu__tab
+    %ul.tab
+      %li
+        = link_to '当店のおすすめ', "#", class: "tab_item active"
+      %li
+        = link_to '前菜の部', "#", class: "tab_item"
+      %li
+        = link_to '肉料理の部', "#", class: "tab_item"
+      %li
+        = link_to '魚介・豆腐・卵料理の部', "#", class: "tab_item"
+      %li
+        = link_to '野菜料理の部', "#", class: "tab_item"
+      %li
+        = link_to '湯・点心の部', "#", class: "tab_item"
+      %li
+        = link_to '飯の部', "#", class: "tab_item"
+      %li
+        = link_to '麺の部', "#", class: "tab_item"
+      %li
+        = link_to 'お飲み物・デザート', "#", class: "tab_item"
+      %li
+        = link_to 'コース料理', "#", class: "tab_item"
+  .menu__content
+    %ul.contents
+      %li.content.show
+        .menu__content__view
+          = render "recomend"
+      %li.content
+        .menu__content__view
+          = render "appetizer"
+      %li.content
+        .menu__content__view
+          = render "meet"
+      %li.content
+        .menu__content__view
+          = render "seafood"
+      %li.content
+        .menu__content__view
+          = render "vegetable"
+      %li.content
+        .menu__content__view
+          = render "soup"
+      %li.content
+        .menu__content__view
+          = render "rice"
+      %li.content
+        .menu__content__view
+          = render "noodle"
+      %li.content
+        .menu__content__view
+          = render "drink"
+      %li.content
+        .menu__content__view
+          = render "course"
+  
+  = javascript_include_tag 'menus.js'

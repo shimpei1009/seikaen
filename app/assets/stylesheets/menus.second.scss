@@ -1,0 +1,72 @@
+.box{
+  padding-left: 120px;
+  padding-right: 120px;
+  overflow: scroll;
+  &__title{
+    font-size: 25px;
+    padding-left: 15px;
+    margin-top: 10px;
+    padding-bottom: 3px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid;
+  }
+  &__content{
+    display: flex;
+    padding-left: 80px;
+    padding-right: 80px;
+    justify-content: space-between;
+    &__left{
+      display: grid;
+    }
+    &__right{
+      display: grid;
+    }
+    tb{
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+  .course{
+    width: 100%;
+    display: flex;
+    &__left{
+      width: 50%;
+      font-size: 23px;
+      height: 400px;
+      text-align: center;
+      // border-right: 1px dotted;
+      &__peopleRow{
+        font-size: 18px;
+        margin-top: 15px;
+      }
+      &__peopleHigh{
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      tb{
+        font-size: 15px;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+    &__right{
+      width: 50%;
+      font-size: 23px;
+      height: 400px;
+      text-align: center;
+      &__peopleRow{
+        font-size: 18px;
+        margin-top: 15px;
+      }
+      &__peopleHigh{
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+      tb{
+        font-size: 15px;
+        display: block;
+        margin-top: 5px;
+      }
+    }
+  }
+}
