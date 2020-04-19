@@ -1,7 +1,7 @@
 body{
   background-size: contain;
   background-color: #fffff4;
-  min-width: 830px;
+  min-width: 1010px;
 }
 .header{
   height: 100px;
@@ -47,6 +47,7 @@ body{
       cursor: pointer;
       position: relative;
     }
+
     a:hover{
       color:  lightseagreen;
     }
@@ -70,13 +71,34 @@ body{
     &__text{
       margin-top: 10px;
       font-size: 15px;
+      margin-left: 5px;
       font-weight: bold;
       line-height: 30px;
     }
-    &__num{
+    a.tel{
+      color: black;
+      background-color: #fffff4;
+      border: none;
       font-weight: bold;
       line-height: 30px;
       font-size: 25px;
+      position: relative;
+    }
+    a.tel:hover{
+      color:  lightseagreen;
+    }
+    a.tel::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background:  lightseagreen;
+      transition: all 0.3s ease 0s;
+    }
+    a.tel:hover::after {
+      width: 100%;
     }
     a{
       color: white;
@@ -172,7 +194,7 @@ body{
         font-size: 15px;
       }
       &__title{
-        font-size: 20px;
+        font-size: 16px;
         font-weight: bold;
         word-wrap: break-word;
         overflow: auto;

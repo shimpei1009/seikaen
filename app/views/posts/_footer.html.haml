@@ -1,0 +1,20 @@
+.footer
+  .footer__contents
+    .footer__contents__left
+      = link_to root_path, class: ".header__contents__nav__left__category__first" do
+        %ul
+          %li<
+            .footer__contents__left__title
+              %span 中華調理
+              %p 精華園 
+    .footer__contents__right
+      %ul.right
+        %li<
+          = link_to 'プライバシーポリシー', "#", class: ".header__contents__nav__left__category__second"
+        %li<
+          = link_to 'サイト利用規約', "#", class: ".header__contents__nav__left__category__third"
+        %li<
+          = link_to 'お問い合わせ', form_path, class: ".header__contents__nav__left__category__third"
+  .footer__logo
+  .footer__copyright 
+    %p ©️ SEIKAEN

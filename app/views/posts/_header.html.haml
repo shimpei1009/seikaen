@@ -18,7 +18,7 @@
     .header__telBox__text
       TEL
     .header__telBox__num
-      03-3333-3333
+      %a.tel{:href => "tel:000-1234-5678"} 000-1234-5678
     .header__telBox__logOut 
       -if user_signed_in?
         = link_to "新規投稿", new_post_path
