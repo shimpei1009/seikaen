@@ -1,7 +1,11 @@
 .box{
-  padding-left: 120px;
-  padding-right: 120px;
+  padding-left: 220px;
+  padding-right: 220px;
+  padding-bottom: 150px;
+  min-width: 1010px;
+  height: 100vh;
   overflow: scroll;
+  box-sizing:border-box;
   &__title{
     font-size: 25px;
     padding-left: 15px;
@@ -24,6 +28,35 @@
     tb{
       font-size: 18px;
       margin-bottom: 15px;
+      cursor: zoom-in;
+    }
+    .box__content__right tb{
+      cursor: default;
+    }
+    tb:hover {
+      position: relative;
+      text-decoration: none;
+     } 
+    tb span {
+       display: none;
+        position: absolute;
+        top: 1em;
+        left: 0; 
+      }
+    tb:hover span {
+        border: none;  
+        display: block; 
+        margin-top: -20px;
+        margin-bottom: 0px;
+        margin-right: 0px;
+        margin-left: -250px ;
+        width: 300px;
+    }
+    img{
+      width: 230px;
+      height: auto;
+      border: none;
+      border-radius: 5px;
     }
   }
   .course{
@@ -34,7 +67,6 @@
       font-size: 23px;
       height: 400px;
       text-align: center;
-      // border-right: 1px dotted;
       &__peopleRow{
         font-size: 18px;
         margin-top: 15px;

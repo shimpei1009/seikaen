@@ -1,12 +1,11 @@
 .info{
   width: 100vw;
-  height: 100%;
+  height: 100vh;
   min-width: 850px;
-  position: fixed;
-  overflow: scroll;
   padding:40px 200px 200px 200px;
   background-color: #fffff4;
   box-sizing: border-box;
+  overflow: auto;
   font-family: serif;
   &__text{
     width: 120;
