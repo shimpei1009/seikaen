@@ -1,8 +1,7 @@
 .box{
-  padding-left: 220px;
-  padding-right: 220px;
+  padding-left: 20%;
+  padding-right: 20%;
   padding-bottom: 150px;
-  min-width: 1010px;
   height: 100vh;
   overflow: scroll;
   box-sizing:border-box;
@@ -26,7 +25,7 @@
       display: grid;
     }
     tb{
-      font-size: 18px;
+      font-size: 1.5vw;
       margin-bottom: 15px;
       cursor: zoom-in;
     }

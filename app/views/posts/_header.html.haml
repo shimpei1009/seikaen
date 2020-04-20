@@ -1,19 +1,24 @@
-.header
-  .header__logo
-    = link_to root_path do
-      %span中華料理
-      精華園 
-  .header__rightBox
-    .header__rightBox__top 
-      = link_to 'TOP', root_path
-    .header__rightBox__news 
-      = link_to 'お知らせ', info_index_path
-    .header__rightBox__menu
-      = link_to 'メニュー', menus_path
-    .header__rightBox__address
-      = link_to '店舗情報', maps_path
-    .header__rightBox__contact
-      = link_to 'お問い合わせ', form_path
+%header#header{:role => "heading"}
+  %nav
+    .logo
+      = link_to root_path, class: :logo do
+        %span中華料理
+        精華園
+    %ul.header
+      %li.header
+        = link_to 'TOP', root_path
+      %li.header
+        = link_to 'お知らせ', info_index_path
+      %li.header
+        = link_to 'メニュー', menus_path
+      %li.header
+        = link_to '店舗情報', maps_path
+      %li.header
+        = link_to 'お問い合わせ', form_path
+    .nav__icon
+      %span.header
+      %span.header
+      %span.header
   .header__telBox
     .header__telBox__text
       TEL
@@ -21,5 +26,6 @@
       %a.tel{:href => "tel:000-1234-5678"} 000-1234-5678
     .header__telBox__logOut 
       -if user_signed_in?
-        = link_to "新規投稿", new_post_path
-        = link_to "ログアウト", destroy_user_session_path, method: :delete
+        = link_to "新規投稿", new_post_path,class: :sign_up
+        = link_to "ログアウト", destroy_user_session_path,class: :sign_up, method: :delete
+
