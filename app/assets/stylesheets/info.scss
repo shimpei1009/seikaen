@@ -27,7 +27,7 @@
       line-height: 40px;
       font-weight: 100;
     }
-    a{
+    a.postManage__edit{
       font-size: 15px;
       color: white;
       font-weight: 100;
@@ -36,11 +36,23 @@
       text-decoration: none;
       border-radius: 10px;
       line-height: 2;
-    }
-    a.postManage__edit{
       margin-left: 10px;
     }
-    a:hover{
+    a.postManage__edit:hover{
+      color: cyan;
+    }
+    a.postManage__delete{
+      font-size: 15px;
+      color: white;
+      font-weight: 100;
+      padding: 5px;
+      background-color: lightseagreen;
+      text-decoration: none;
+      border-radius: 10px;
+      line-height: 2;
+      margin-left: 10px;
+    }
+    a.postManage__delete:hover{
       color: cyan;
     }
   }
