@@ -44,6 +44,7 @@ ul.header {
   list-style: none;
   float: right;
   font-size: 16px;
+  font-weight: bold;
 }
 
 li.header{
@@ -102,8 +103,12 @@ li.header a:hover::after {
   margin-right: 50px;
   margin-top: 15px;
   min-width: 180px;
+  &__text{
+    font-weight: bold;
+  }
   &__num{
     font-size: 25px;
+    padding-left: 7px;
   }
   a.tel{
     text-decoration: none;
