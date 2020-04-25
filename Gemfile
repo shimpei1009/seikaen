@@ -66,6 +66,7 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'haml-rails'
 gem 'erb2haml'
+gem "font-awesome-rails"
 gem 'font-awesome-sass'
 gem 'devise' 
 gem 'devise-i18n'

@@ -1,12 +1,14 @@
 body{
   background-size: contain;
   background-color: #fffff4;
+  height: 100%;
 }
 .wrapper{
-  width: 80%;
+  max-width: 80%;
+  height: auto;
   margin: 0 auto;
   &__photo{
-    height: 90vh;
+    height: 500px;
     position: relative;
     &__image{
       background-size: cover;
@@ -38,10 +40,10 @@ body{
   }
   &__box{
     font-family: serif;
-    height: 70vh;
     display: flex;
     &__left{
     padding: 10px;
+    height: 60vh;
     width: 50%;
     overflow: scroll;
     &__titleSpace{
@@ -58,12 +60,13 @@ body{
     }
     }
     &__right{
-      padding-top: 10px;
+      padding: 10px 20px 20px 20px;
       width: 50%;
       &__titleSpace{
         &__text{
           margin: 0 auto;
           text-align: center;
+          margin-bottom: 15px;
           font-size: 17px;
           width: 100px;
           font-weight: bold;

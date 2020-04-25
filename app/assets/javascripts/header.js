@@ -13,7 +13,6 @@ $(function(){
 			$('.header__telBox').css({ display: 'block',height: 'auto' });
 		}else {
 			$('nav ul.header').css({ display: 'none',height: h + 'px'});
-			$('.header__telBox').css({ display: 'none',height: h + 'px'});
 		}
 	});
 });

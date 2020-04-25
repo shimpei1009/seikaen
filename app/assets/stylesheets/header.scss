@@ -9,6 +9,8 @@ header {
 a.logo{
   font-size: 50px;
   font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
 
 a.logo:hover{
@@ -105,10 +107,14 @@ li.header a:hover::after {
   min-width: 180px;
   &__text{
     font-weight: bold;
+    padding-left: 7px;
   }
   &__num{
     font-size: 25px;
     padding-left: 7px;
+  }
+  &__logOut{
+    width: 180px;
   }
   a.tel{
     text-decoration: none;
@@ -244,6 +250,74 @@ li.header a:hover::after {
       transition: all .4s;
       box-sizing: border-box;
       z-index: 999;
-      
+      right: -270px;
+  }
+  .header__telBox{
+    margin-right: 90px;
+    margin-top: 15px;
+    min-width: 180px;
+    &__text{
+      font-weight: bold;
+    }
+    &__num{
+      font-size: 25px;
+      padding-left: 7px;
+    }
+    a.tel{
+      text-decoration: none;
+      color: black;
+    }
+    a.tel{
+      color: black;
+      background-color: #fffff4;
+      text-decoration: none;
+      font-weight: bold;
+      line-height: 30px;
+      font-size: 23px;
+      position: relative;
+    }
+    a.tel:hover{
+      color:  #cd5c5c;
+    }
+    a.tel::after {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background:  #cd5c5c;
+      transition: all 0.3s ease 0s;
+    }
+    a.tel:hover::after {
+      width: 100%;
+  
+    }
+    a.sign_up{
+      color: white;
+      text-decoration: none;
+      padding: 1px 15px;
+      display: inline-block;
+      font-size: 14px;
+      border: solid 1px;
+      background-color: #cd5c5c;
+      border-radius: 10px ;
+    }
+    a.sign_up:hover{
+      color:orange;
+    }
+    a.log_out{
+      color: white;
+      text-decoration: none;
+      padding: 1px 15px;
+      display: inline-block;
+      font-size: 14px;
+      border: solid 1px;
+      background-color: #cd5c5c;
+      border-radius: 10px ;
+    }
+    a.log_out:hover{
+      color:orange;
+    }
   }
 }
