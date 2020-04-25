@@ -1,8 +1,8 @@
 window.addEventListener("load", function() {
   // タブのDOMを取得し、変数で定義
-  let tabs = document.getElementsByClassName("tab_item");
+  var tab = document.getElementsByClassName("tab_item");
   // tabsを配列に変換する
-  tabsAry = Array.prototype.slice.call(tabs);
+  tabsAry = Array.prototype.slice.call(tab);
 
   // クラスの切り替えをtabSwitch関数で定義
   function tabSwitch() {
