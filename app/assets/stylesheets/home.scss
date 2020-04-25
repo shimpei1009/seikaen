@@ -26,23 +26,23 @@ body{
       opacity: 1;
     }
     &__image:nth-child(1) {
-      background-image: url('https://bit.ly/2lO4USI');
+      background-image: image-url('original.jpg');
     }
     &__image:nth-child(2) {
-      background-image: url('https://bit.ly/2lO9PDg');
+      background-image: image-url('0015.jpg');
     }
     &__image:nth-child(3) {
-      background-image: url('https://bit.ly/2mEDLzs');
+      background-image: image-url('8628ccb184810dbd11949d8adbbc01e5.jpg');
     }
     &__image:nth-child(4) {
-      background-image: url('https://bit.ly/2mo9SaH');
+      background-image: url('img_22aebd5b4d7739b1e1ff878bf0f1f5b2104156.jpg');
     }
   }
   &__box{
     font-family: serif;
     display: flex;
     &__left{
-    padding: 10px;
+    padding: 10px 10px 30px 10px;
     height: 60vh;
     width: 50%;
     overflow: scroll;

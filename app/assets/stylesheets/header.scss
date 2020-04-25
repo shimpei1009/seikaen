@@ -252,6 +252,11 @@ li.header a:hover::after {
       z-index: 999;
       right: -270px;
   }
+  .nav__icon__text{
+    position: inherit;
+    top: -20px;
+    left: -7px;
+  }
   .header__telBox{
     margin-right: 90px;
     margin-top: 15px;
