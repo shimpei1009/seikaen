@@ -17,4 +17,5 @@ Google Map API
 
 ## Author
 <a href="https://twitter.com/1009takaki">・Twitter</a>
+<br>
 <a href="https://qiita.com/shimpex">・Qiita</a>
