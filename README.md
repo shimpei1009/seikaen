@@ -2,7 +2,7 @@
 
 ## 中華料理店のホームページ
 中華料理店のホームページです。
-<a href="https://gyazo.com/3458b45d9b9ddacde5c681379bcc8ab8"><img src="https://i.gyazo.com/3458b45d9b9ddacde5c681379bcc8ab8.jpg" alt="Image from Gyazo" width="1264"/></a>
+<a href="https://gyazo.com/17c04e58bd47af5c30415c798f4848cb"><img src="https://i.gyazo.com/17c04e58bd47af5c30415c798f4848cb.jpg" alt="Image from Gyazo" width="1095"/></a>
 
 ## 説明
 架空の中華料理店のホームページ作成です。
